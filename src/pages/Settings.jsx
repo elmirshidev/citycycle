@@ -31,21 +31,21 @@ function Settings() {
             </div>
 
             <div className='flex flex-col gap-y-4 items-center'>
-                <div className='flex gap-x-4 items-center cursor-pointer border-b-black border-b-[1px] p-4'>
+                <div className='flex gap-x-4 items-center cursor-pointer border-b-black border-b-[1px] p-4 w-[200px]'>
                     <svg className='SVG !fill-black' viewBox="0 0 576 512"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg>
                     <h4 className='text-[#575047] text-[16px] leading-[24px]'>Trips history</h4>
                 </div>
-                <div onClick={() => navigate('/wallet')} className='flex gap-x-4 items-center cursor-pointer border-b-black border-b-[1px] p-4'>
+                <div onClick={() => navigate('/wallet')} className='flex gap-x-4 items-center cursor-pointer border-b-black border-b-[1px] p-4 w-[200px]'>
                     <svg className='SVG !fill-black' viewBox="0 0 512 512"><path d="M461.2 128H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h384c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h397.2c28.02 0 50.8-21.53 50.8-48V176c0-26.47-22.78-48-50.8-48zM416 336c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
                     <h4 className='text-[#575047] text-[16px] leading-[24px]'>Wallet</h4>
                 </div>
-                <div className='flex gap-x-4 items-center cursor-pointer border-b-black border-b-[1px] p-4'>
+                <div className='flex gap-x-4 items-center cursor-pointer border-b-black border-b-[1px] p-4 w-[200px]'>
                     <svg className='SVG !fill-black' viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
                     <h4 className='text-[#575047] text-[16px] leading-[24px]'>Help</h4>
                 </div>
             </div>
 
-            <div onClick={() => navigate('/signup')} className='flex ml-[100px] mt-[50px] items-center gap-x-4'>
+            <div onClick={() => navigate('/signup')} className='flex cursor-pointer pl-[50px] pt-[20px] items-center gap-x-4'>
                 <svg className='SVG !fill-black' viewBox="0 0 512 512"><path d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"></path></svg>
                 <h4 className='text-[#575047] text-[16px] leading-[24px] cursor-pointer'>Log Out</h4>
             </div>

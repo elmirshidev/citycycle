@@ -38,8 +38,10 @@ function Main() {
             initial={{ y: -4000, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 2, type: 'spring' }}
-            className="h-full px-6 bg-main-black pt-[100px] relative" style={{ backgroundImage: `url(${bg})`, backgroundPosition: 'center center', backgroundSize: 'cover' }}
+            className="h-full px-6 bg-main-black pt-[10px] relative" style={{ backgroundImage: `url(${bg})`, backgroundPosition: 'center center', backgroundSize: 'cover' }}
         >
+            <svg onClick={() => navigate('/settings')} className='SVG mt-[50px] mb-[10px] cursor-pointer' viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+
             <section className='relative h-[200px]'>
 
                 {new Array(20).fill(1).map((ui, key) => {
@@ -55,7 +57,6 @@ function Main() {
                     )
                 })}
             </section>
-            <svg onClick={() => navigate('/settings')} className='SVG mt-[50px] mb-[10px] cursor-pointer' viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
 
             {clicked && (
                 <section className='flex p-4 absolute bottom-0 w-full flex-col gap-y-6 items-center justify-center bg-[#0e0d0b] rounded-[20px]'>

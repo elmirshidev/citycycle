@@ -12,7 +12,7 @@ function Unlock() {
             className="flex flex-col items-center justify-center gap-y-4 bg-[#ffb23d] h-full">
             <h1 className='text-[#0e0d0b] text-[30px] font-[700] leading-[32px] text-center'>Unlock the bike</h1>
             <h4 className='text-[#575047] text-[20px] font-[600] leading-[24px] text-center'>Scan the QR code</h4>
-            <img className='w-[250px]' src={qrcode} />
+            <img onClick={() => navigate('/map')} className='w-[250px]' src={qrcode} />
             <p className='text-[#3a3835] my-6 text-[12px] font-[500] leading-[16px] text-center'>
                 Have trouble scanning code? Rewrite <br />
                 number code here <span className='font-bold' contentEditable></span>
